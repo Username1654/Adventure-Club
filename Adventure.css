@@ -162,7 +162,28 @@ input{
     margin-bottom: 10px;
     cursor: crosshair;
 }
-
+textarea{
+    width:100%;
+    resize:vertical;
+}
+input:focus,
+select:focus,
+textarea:focus {
+outline: 2px solid #1e3c72;
+outline-offset: 2px;
+}
+/* Error states */
+input:invalid {
+border-color: #dc2626;
+}
+/* Hover states */
+.Sub:hover {
+background-color: #2a4d8f;
+}
+/* Active states */
+.Sub:active {
+transform: translateY(1px);
+}
 @media screen and (max-width:500px){
 
     .Con{
